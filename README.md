@@ -17,7 +17,9 @@ Keep note of the output ID of the container
   docker run -i -d 6d456a292570
 
 If you forgot your container image id
+
   ID=`sudo docker images | grep load | awk '{print $3}'`
+  
   docker run -i -d $ID
 
 
