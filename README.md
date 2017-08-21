@@ -11,14 +11,17 @@ The script does the following:
 clone the repo 
 
 Then run the build
+
     sudo docker build -t loadtest:latest docker-loadgenerator/
     
-Keep note of the output ID of the container
+    
+Keep note of the output ID of the container:
+
     example: Successfully built 6d456a292570
 
 # Run container
 
-  docker run -i -d 6d456a292570
+    docker run -i -d 6d456a292570
 
 If you forgot your container image id
 
@@ -29,8 +32,9 @@ If you forgot your container image id
 
 # To Do
 Instead of ping use netcat
-  nc localhost 4444 > filename.img 
+
+      nc localhost 4444 > filename.img 
   
-  nc -l 4444
+      nc -l 4444
   
   
